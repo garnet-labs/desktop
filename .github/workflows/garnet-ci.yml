@@ -18,6 +18,7 @@ jobs:
         uses: garnet-org/action@v2
         with:
           api_token: ${{ secrets.GARNET_API_TOKEN }}
+          jibril_version: latest
 
       - name: Parse .tool-versions
         uses: wistia/parse-tool-versions@v2.1.1
@@ -56,6 +57,7 @@ jobs:
         uses: garnet-org/action@v2
         with:
           api_token: ${{ secrets.GARNET_API_TOKEN }}
+          jibril_version: latest
 
       - uses: pnpm/action-setup@v4
 
